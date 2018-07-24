@@ -28,7 +28,36 @@
 		humanSelection = prompt("Rock, Paper, or Scissor?");
 		return humanSelection.toUpperCase();
 	}
-	
+
+	function playRound(playerSelection, computerSelection) {
+		if (playerSelection == computerSelection) {
+			return "It's a tie!";
+		}
+		if (playerSelection == "ROCK" && computerSelection == "PAPER") {
+			return "Computer wins";
+		}
+		if (playerSelection == "ROCK" && computerSelection == "SCISSORS") {
+			return "You Win!";
+		}
+		if (playerSelection == "PAPER" && computerSelection == "ROCK") {
+			return "You Win!";
+		}
+		if (playerSelection == "PAPER" && computerSelection == "SCISSORS") {
+			return "Computer wins";
+		}
+		if (playerSelection == "SCISSORS" && computerSelection == "PAPER") {
+			return "You Win!";
+		}
+		if (playerSelection == "SCISSORS" && computerSelection == "ROCK") {
+			return "Computer wins";
+		}
+
+	}
+
+	let playerSelection = humanPlay();
+	let computerSelection = computerPlay();
+	console.log(playRound(playerSelection, computerSelection))
+
 	
 	
 
