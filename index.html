@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+
+	function computerPlay() {
+		selection = Math.floor(Math.random()*3);
+		switch (selection) {
+			case 0:
+				selection = "Rock";
+				break;
+			case 1:
+				selection = "Paper";
+				break;
+			case 2:
+				selection = "Scissors";
+				break;
+		}
+		return selection.toUpperCase();
+		}
+
+
+	function humanPlay() {
+		humanSelection = prompt("Rock, Paper, or Scissor?");
+		return humanSelection.toUpperCase();
+	}
+	
+	
+	
+
+</script>
+
+</body>
+</html>
